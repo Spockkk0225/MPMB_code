@@ -39,7 +39,7 @@ int main() {
     model.result.clear();
     ListingSampling(model);
     end = clock();
-    cout << "MonteCarlo Time : " << (double) (end - start) / CLOCKS_PER_SEC << " s " << endl;
+    cout << "Listing Time : " << (double) (end - start) / CLOCKS_PER_SEC << " s " << endl;
 
     start = clock();
     cout << endl;
@@ -47,6 +47,6 @@ int main() {
     model.result.clear();
     OrderingListingSampling(model);
     end = clock();
-    cout << "MonteCarlo Time : " << (double) (end - start) / CLOCKS_PER_SEC << " s " << endl;
+    cout << "OrderingListingSampling Time : " << (double) (end - start) / CLOCKS_PER_SEC << " s " << endl;
 }
 
